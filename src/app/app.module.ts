@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
-import {CourseComponent} from './course/course.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {CommonModule} from "@angular/common";
 import {FormsModule} from "@angular/forms";
+import { CategoriesComponent } from './views/categories/categories.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CourseComponent,
+    CategoriesComponent,
+
   ],
   imports: [
     BrowserModule,
