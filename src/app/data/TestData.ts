@@ -162,6 +162,7 @@ export class TestData {
     {
       id: 20,
       title: 'Купить корм коту',
+      category: TestData.categories[1],
       completed: true
     }
 
