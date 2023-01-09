@@ -1,7 +1,6 @@
-
 <aside
   class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3   bg-gradient-dark"
-  id="sidenav-main">
+  id="sidenav-main" style="box-shadow: #323a54 0px 5px 15px">
   <div class="sidenav-header">
     <i class="fas fa-times p-3 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
        aria-hidden="true" id="iconSidenav"></i>
@@ -13,8 +12,8 @@
   <hr class="horizontal light mt-0 mb-2">
   <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
     <ul class="navbar-nav">
-      <li class="nav-item" *ngFor="let category of categories" (click)="showTasksByCategory(category)">
-        <a class="nav-link">
+      <li class="nav-item pointer" *ngFor="let category of categories" (click)="showTasksByCategory(category)">
+        <a class="nav-link" [class.active]="category===selectedCategory">
           <span>{{category.title}}</span>
         </a>
       </li>

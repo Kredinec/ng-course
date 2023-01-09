@@ -71,7 +71,7 @@ export class TestData {
       priority: TestData.priorities [1],
       completed: false,
       category: TestData.categories[2],
-      date: new Date('2022 - 12 - 12'),
+      date: new Date('2022-12-12'),
     },
     {
       id: 7,
